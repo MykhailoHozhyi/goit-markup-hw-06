@@ -8,12 +8,16 @@ const menuBtn = document.querySelector('.menu-btn');
 const mobileMenu = document.querySelector('.mob-menu');
 const mobileMenuCloseBtn = document.querySelector('.mob-menu-close-btn');
 
+const subscribeForm = document.querySelector('.footer-subscribe-form');
+
 orderBtn.addEventListener('click', onOrderBtnClick);
 backdropEl.addEventListener('click', onBackdropElClick);
 modalForm.addEventListener('submit', onModalFormSubmit);
 
 menuBtn.addEventListener('click', onMenuBtnClick);
 mobileMenuCloseBtn.addEventListener('click', onMobileMenuCloseBtnClick);
+
+subscribeForm.addEventListener('submit', onSubscribeFormSubmit);
 
 function onOrderBtnClick() {
   backdropEl.classList.add('is-open');
@@ -45,4 +49,10 @@ function onMenuBtnClick() {
 function onMobileMenuCloseBtnClick() {
   mobileMenu.classList.remove('is-open');
   document.body.classList.remove('no-scroll');
+}
+
+function onSubscribeFormSubmit(event) {
+  event.preventDefault();
+
+  subscribeForm.reset();
 }
