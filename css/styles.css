@@ -1,7 +1,7 @@
 /* ! ===== RESET STYLES ===== ! */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
@@ -71,7 +71,7 @@ address {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -191,7 +191,7 @@ address {
   }
 
   .line::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -939,6 +939,10 @@ address {
 }
 
 /* ! ===== BACKDROP STYLES ===== ! */
+
+.no-scroll {
+  overflow: hidden;
+}
 
 .backdrop {
   position: fixed;
